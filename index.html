@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="heading">
+            <h1 id="title">Terry's Survey Form</h1>
+            <p id="description">My first attempt at developing a form</p>
+        </div>
+    
+        <section id="form-container">
+            <form id="survey-form">
+                <div class="personal">
+                    <label for="name-label">Name</label> <br>
+                    <input type="text" id="name-label" placeholder="Enter your name" required><br>
+                    <label for="email-label">Email</label><br>
+                    <input type="email" id="email-label" placeholder="Enter your email" required><br>
+                    <label for="number-label">Age optional</label><br>
+                    <input type="number" id="number-label" min="0" max="180" placeholder="Age"><br>
+                    <label for="role">What is your role</label><br>
+                    <select name="role" id="dropdown">
+                        <option value="default">Select current role</option>
+                        <option value="full">Full Time</option>
+                        <option value="part">Part Time</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <br>
+                <p>Would you recommed me as a Web Developer?</p><br>
+                <input type="radio" id="yes" name="recommend" value="yes" checked>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+                <br>
+                <br>
+                <p>What would you say you feel confident at?</p><br>
+                <input type="checkbox" id="skill1" name="skill1" value="HTML">
+                <label for="skill1"> HTML</label><br>
+                <input type="checkbox" id="skill2" name="skill2" value="CSS">
+                <label for="skill2"> CSS</label><br>
+                <input type="checkbox" id="skill3" name="skill3" value="Javascript">
+                <label for="skill3"> Javascript</label>
+                <br>
+                <br>
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+    
+        </section>
+    </div>
+    
+</body>
+</html>
